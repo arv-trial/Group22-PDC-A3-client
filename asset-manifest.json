@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Group22-PDC-A3-client/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Group22-PDC-A3-client/static/js/main.03734dc8.chunk.js",
-    "main.js.map": "/Group22-PDC-A3-client/static/js/main.03734dc8.chunk.js.map",
-    "runtime-main.js": "/Group22-PDC-A3-client/static/js/runtime-main.268fae2c.js",
-    "runtime-main.js.map": "/Group22-PDC-A3-client/static/js/runtime-main.268fae2c.js.map",
-    "static/js/2.eba6075c.chunk.js": "/Group22-PDC-A3-client/static/js/2.eba6075c.chunk.js",
-    "static/js/2.eba6075c.chunk.js.map": "/Group22-PDC-A3-client/static/js/2.eba6075c.chunk.js.map",
-    "index.html": "/Group22-PDC-A3-client/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/Group22-PDC-A3-client/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.eba6075c.chunk.js.LICENSE.txt": "/Group22-PDC-A3-client/static/js/2.eba6075c.chunk.js.LICENSE.txt"
+    "main.css": "/arv-trial-client/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/arv-trial-client/static/js/main.03734dc8.chunk.js",
+    "main.js.map": "/arv-trial-client/static/js/main.03734dc8.chunk.js.map",
+    "runtime-main.js": "/arv-trial-client/static/js/runtime-main.5386f9aa.js",
+    "runtime-main.js.map": "/arv-trial-client/static/js/runtime-main.5386f9aa.js.map",
+    "static/js/2.cd583a1d.chunk.js": "/arv-trial-client/static/js/2.cd583a1d.chunk.js",
+    "static/js/2.cd583a1d.chunk.js.map": "/arv-trial-client/static/js/2.cd583a1d.chunk.js.map",
+    "index.html": "/arv-trial-client/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/arv-trial-client/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.cd583a1d.chunk.js.LICENSE.txt": "/arv-trial-client/static/js/2.cd583a1d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.268fae2c.js",
-    "static/js/2.eba6075c.chunk.js",
+    "static/js/runtime-main.5386f9aa.js",
+    "static/js/2.cd583a1d.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
     "static/js/main.03734dc8.chunk.js"
   ]
