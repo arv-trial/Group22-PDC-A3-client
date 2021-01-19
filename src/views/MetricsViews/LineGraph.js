@@ -1,5 +1,6 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
+import { DataProvider } from "react-admin";
 
 const _data = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -23,58 +24,66 @@ const _data = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [65, 59, 80, 81, 56, 55, 40],
+      data: [],
     },
   ],
 };
 
 const _option = {
   tooltips: {
-      titleSpacing: 6,
-      xPadding: 7,
-      yPadding: 7,
-      showAllTooltips:true,
+    titleSpacing: 6,
+    xPadding: 7,
+    yPadding: 7,
+    showAllTooltips: true,
   },
-  legend:{
-      display: false,
-      labels: {
-          fontColor: '#000',
-          fontSize:15,
-      }
+  legend: {
+    display: false,
+    labels: {
+      fontColor: "#000",
+      fontSize: 15,
+    },
   },
   plugins: {
-      datalabels: {
-          color: '#000',
-          anchor: 'center',
-          textAlign:'center',
-          font: {
-              size: 16
-          },
-      }
+    datalabels: {
+      color: "#000",
+      anchor: "center",
+      textAlign: "center",
+      font: {
+        size: 16,
+      },
+    },
   },
-  title:{
-      display: true,
-      text: `Age Chart Breakdowns Of Issues In Backlog `,
-      fontSize: 15,
-      fontColor: "#545454"
+  title: {
+    display: true,
+    text: `Age Chart Breakdowns Of Issues In Backlog `,
+    fontSize: 15,
+    fontColor: "#545454",
   },
   scales: {
-      yAxes: [{
-          ticks: {
-              beginAtZero: true,
-              maintainAspectRatio:true,
-          }
-      }],
-  }
-}
-
-export function LineGraph(){
-  return(
-  <div>
-    <h2>Line Example</h2>
-    <Line data = {_data} options= {_option} />
-  </div>
-  )
+    yAxes: [
+      {
+        ticks: {
+          beginAtZero: true,
+          maintainAspectRatio: true,
+        },
+      },
+    ],
+  },
 };
 
-
+export async function LineGraph() {
+  const data = await fetch("https://arv-server.herokuapp.com/nonsense");
+  const data1 = await data.json();
+  console.log("data", data1);
+  // .finally((res)=>{
+  //   console.log("res", res);
+  _data.datasets[0].data = data1.data;
+  // });
+  console.log("data", _data);
+  return (
+    <div>
+      <h2>Line Example</h2>
+      <Line data={_data} options={_option} />
+    </div>
+  );
+}

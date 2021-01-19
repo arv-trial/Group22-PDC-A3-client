@@ -1,7 +1,7 @@
 import React from "react";
-import { DateField, TextField } from "react-admin";
+import { DateField, TextField, List, Datagrid, DeleteButton, EditButton } from "react-admin";
 
-function TrialList() {
+function TrialList(props) {
   return (
     <div>
       <List {...props}>
