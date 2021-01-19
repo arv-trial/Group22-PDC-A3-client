@@ -1,8 +1,12 @@
 import * as React from "react";
-import { List, Datagrid, TextField, DateField, DeleteButton, EditButton} from 'react-admin';
+import { List, Datagrid, TextField, DateField, DeleteButton, EditButton, Pagination} from 'react-admin';
+
+
+
+const PatientPagination = props => <Pagination rowsPerPageOptions={[10, 25, 50, 100]} {...props} />;
 
 const PatientList = props => (
-    <List {...props}>
+    <List {...props} pagination = {<PatientPagination/>}>
         <Datagrid rowClick="edit">
             <TextField source="id" />
             <TextField source="patient_name" />
