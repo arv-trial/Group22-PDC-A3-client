@@ -8,7 +8,7 @@ export const GridStyle = {
 
 export const CardStyle = {
     justifyContent:"space-evenly",
-    width:"40%",
+    // width:"40%",
     position: "relative",
     alignContent:"center",
     display:"flex",
