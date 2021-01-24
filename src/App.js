@@ -17,19 +17,19 @@ import DrugSymptoms from "./views/DrugViews/DrugSymptoms"
 import { theme } from "./style";
 
 
-const fetchJson = (url, options = {}) => {
+
+const httpClient = (url, options = {}) => {
   if (!options.headers) {
-    options.headers = new Headers({ Accept: "application/json" });
+      options.headers = new Headers({ Accept: 'application/json' });
   }
   // add your own headers here
+  options.headers.set('Access-Control-Expose-Headers', 'Content-Range');
+  options.headers.set('Content-Range', 'bytes : 0-9/*');
 
   return fetchUtils.fetchJson(url, options);
-};
+}
+const dataProvider = simpleRestProvider('https://arv-server.herokuapp.com', httpClient);
 
-const dataProvider = simpleRestProvider(
-  "https://arv-server.herokuapp.com",
-  fetchJson
-);
 console.log("dataProvider", dataProvider);
 const App = () => (
   <Admin theme={theme} dataProvider={dataProvider}>
