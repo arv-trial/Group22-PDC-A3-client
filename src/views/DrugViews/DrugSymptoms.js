@@ -14,13 +14,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     List: {
-        backgroundColor:'#d6b0b1'
-        
+        backgroundColor:'#0e918c'
+
     },
 });
-
-const SideEffect = (drug) => {
-}
 
 
 function DrugSymptoms(props) {

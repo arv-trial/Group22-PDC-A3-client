@@ -24,7 +24,7 @@ const PatientPagination = (props) => (
 );
 const useStyles = makeStyles({
   List: {
-      backgroundColor:'#d6b0b1'
+      backgroundColor:'#0e918c'
       
   },
 });

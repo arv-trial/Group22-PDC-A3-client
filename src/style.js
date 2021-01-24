@@ -3,7 +3,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 export const GridStyle = {
     justifyContent:"space-around",
     display:"flex",
-  padding: "10px",
+    // padding: "10px",
 };
 
 export const CardStyle = {
