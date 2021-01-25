@@ -6,10 +6,7 @@ import {
   DeleteButton,
   EditButton,
   NumberField,
-  RichTextField,
-  Create
 } from "react-admin";
-import axios from "axios";
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -33,7 +30,6 @@ function DrugSymptoms(props) {
         <NumberField title = "Price($)" source="price" />
         <DeleteButton basePath="/drug" />
         <EditButton basePath="/drug" />
-        {/* <Create basePath= "/drug"></Create> */}
       </Datagrid>
     </List>
   );
